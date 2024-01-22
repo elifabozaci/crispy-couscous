@@ -7,7 +7,7 @@
     <style>
         body {
             display: flex;
-            align-items: center;
+            align-items: flex-start; /* Align content to the top */
             margin: 0;
             font-family: 'Times New Roman', Times, serif;
         }
@@ -20,7 +20,7 @@
             font-family: 'Consolas', 'BitstreamVeraSansMono', 'CourierNew', Courier, monospace;
             font-size: 12px;
             white-space: pre;
-            margin-left: 200px; /* Adjust the margin to create space for the menu */
+            margin-left: 20px; /* Adjust the margin to create space for the menu */
         }
 
         nav {
@@ -30,12 +30,9 @@
             padding: 20px;
             border-right: 3px solid gray;
             box-sizing: border-box;
-            position: fixed;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            left: 0; /* Position the menu on the left side */
-            top: 0; /* Align to the top of the page */
         }
 
         ul {
@@ -62,10 +59,6 @@
     </style>
 </head>
 <body>
-    <div id="header">
-        <h1>Thank you for wasting some seconds of your life on my website :)</h1>
-    </div>
-
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -75,6 +68,10 @@
         <hr>
         <!-- Add more lines or additional menu items below -->
     </nav>
+
+    <div id="header">
+        <h1>Thank you for wasting some seconds of your life on my website :)</h1>
+    </div>
 
     <code>
         <span class="ascii">
