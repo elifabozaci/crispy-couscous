@@ -54,24 +54,42 @@
         }
 
         .ascii img {
-            max-width: 100%; /* Ensure the image takes up 100% of its container */
-            height: auto; /* Maintain the image's aspect ratio */
-            animation: spinAndResize 5s linear infinite alternate;
-        }
+    max-width: 100%;
+    height: auto;
+    -webkit-animation: spinAndResize 5s linear infinite alternate;
+    animation: spinAndResize 5s linear infinite alternate;
+}
 
-        @keyframes spinAndResize {
-            0% {
-                transform: scale(1);
-                transform-origin: center center;
-            }
-            50% {
-                transform: scale(0.5);
-                transform-origin: center center;
-            }
-            100% {
-                transform: scale(1);
-                transform-origin: center center;
-            }
+@-webkit-keyframes spinAndResize {
+    0% {
+        -webkit-transform: scale(1);
+        -webkit-transform-origin: center center;
+    }
+    50% {
+        -webkit-transform: scale(0.5);
+        -webkit-transform-origin: center center;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        -webkit-transform-origin: center center;
+    }
+}
+
+@keyframes spinAndResize {
+    0% {
+        transform: scale(1);
+        transform-origin: center center;
+    }
+    50% {
+        transform: scale(0.5);
+        transform-origin: center center;
+    }
+    100% {
+        transform: scale(1);
+        transform-origin: center center;
+    }
+}
+
         }
     </style>
 </head>
