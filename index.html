@@ -7,8 +7,10 @@
     <style>
         body {
             display: flex;
-            align-items: flex-start; /* Align content to the top */
+            align-items: center; /* Center content vertically */
+            justify-content: center; /* Center content horizontally */
             margin: 0;
+            min-height: 100vh; /* Ensure full viewport height */
             font-family: 'Times New Roman', Times, serif;
         }
 
@@ -45,6 +47,15 @@
             border: 0;
             border-top: 1px solid gray;
         }
+
+        .main-container {
+            text-align: center;
+        }
+
+        .ascii img {
+            max-width: 100%; /* Ensure the image takes up 100% of its container */
+            height: auto; /* Maintain the image's aspect ratio */
+        }
     </style>
 </head>
 <body>
@@ -58,9 +69,9 @@
         <!-- Add more lines or additional menu items below -->
     </nav>
 
-    <div class="ascii">
+    <div class="main-container">
         <!-- Placeholder content -->
-        <img src="https://i.hizliresim.com/qiheqwh.jpg" alt="Die, die, die my darling">
+        <img class="ascii" src="https://i.hizliresim.com/qiheqwh.jpg" alt="Die, die, die my darling">
     </div>
 </body>
 </html>
